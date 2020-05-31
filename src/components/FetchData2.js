@@ -48,9 +48,9 @@ function FetchData2() {
 
     }, []);
 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => {
         handleSelect(input);
+        // eslint-disable-next-line
     }, [state.data, input])
 
     const handleChange = (e) => {
@@ -63,7 +63,7 @@ function FetchData2() {
             // console.log(typeof state.data[1].Country,  state.data[1].Country);
             setulke(data[0]);
         } catch (error) {
-            console.log(error);
+            // console.log(error);
         }
     }
 
