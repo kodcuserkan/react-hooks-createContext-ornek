@@ -1,7 +1,9 @@
-import React from 'react';
-import { NameContext, JobContext } from '../App';
+import React, { useContext } from 'react';
+import { NameContext, JobContext, CountReducer } from '../App';
 
 function Comp3() {
+    const CounterContext = useContext(CountReducer);
+
     return (
         // kolay olmayan yöntem 
         <div>
@@ -23,6 +25,12 @@ function Comp3() {
                     </div>
                 }
             </NameContext.Consumer>
+
+            <center>
+                <button onClick={() => CounterContext.dispatchMethod('ekle')}>Ekle</button>
+                <button onClick={() => CounterContext.dispatchMethod('cikar')}>Çıkar</button>
+                <button onClick={() => CounterContext.dispatchMethod('reset')}>Reset</button>
+            </center>
 
         </div>
 
