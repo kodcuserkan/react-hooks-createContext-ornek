@@ -4,7 +4,7 @@ import { CountReducer } from '../App';
 
 function Comp1() {
     const CounterContext = useContext(CountReducer);
-    console.log(CounterContext);
+    // console.log(CounterContext);
     return (
         <div>
                 <b>**COMP1</b>

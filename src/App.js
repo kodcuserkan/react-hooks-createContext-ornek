@@ -1,6 +1,8 @@
 import React, { useReducer } from 'react';
 import './App.css';
 import Comp1 from './components/Comp1';
+import FetchData2 from './components/FetchData2'
+// import FetchData1 from './components/FetchData1'
 //import GetPosts from './components/json-get';
 //import UseRdcr from './components/UseReducer';
 //import UserReducer2 from './components/UseReducer2';
@@ -37,6 +39,9 @@ function App() {
     <b>**App.js</b><br/>
 
     <h1>State count: {count}</h1>
+
+    <h3>Çekilen data:</h3>
+    <FetchData2 /> <br/>
 
       {
         /*<GetPosts />

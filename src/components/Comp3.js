@@ -26,6 +26,7 @@ function Comp3() {
                 }
             </NameContext.Consumer>
 
+            {/* KOLAY YÖNTEM  */}
             <center>
                 <button onClick={() => CounterContext.dispatchMethod('ekle')}>Ekle</button>
                 <button onClick={() => CounterContext.dispatchMethod('cikar')}>Çıkar</button>
