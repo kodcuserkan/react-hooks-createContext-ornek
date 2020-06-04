@@ -1,3 +1,47 @@
 .App {
-    background-color: rgb(245, 227, 33);
+    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+}
+
+.divOne {
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+}
+
+button {
+    padding: 1rem 2rem;
+    border: none;
+    background-color: palevioletred;
+    border-radius: 10px;
+    margin: 1rem;
+    box-shadow: cadetblue 10px;
+    animation: fade 500ms linear;
+    position: relative;
+    outline: none;
+}
+
+
+/* button.active {
+    aniasont
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid orange;
+    animation: fadesss 1s;
+} */
+
+@keyframes fadesss {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
 }
